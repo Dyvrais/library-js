@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4beb3c0846.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Library App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="title">
+                <h1><i class="fa-solid fa-book"></i> Librerty</h1>
+            </div>
+            <div id="inputs">
+                <div class="input-field">
+                    <label for="name" >Title</label>
+                    <input type="text" name="name" class="name">
+                </div>
+
+                <div class="input-field">
+                    <label for="author">Author</label>
+                    <input type="text" name="author" class="author">
+                </div>
+
+                <div class="input-field">
+                    <label for="pages">Pages</label>
+                    <input type="number" name="pages" class="pages">
+                </div>  
+                
+                <div class="input-field">
+                    <p>Did you already read this book?</p><br>
+                    <p><input type="radio" name="status" value="Read" id="read"> Yes</p>
+                    <p><input type="radio" name="status" value="Not read" id="not-read"> No</p>
+                </div>
+                <button class="submit-btn">Add Book</button>
+            </div>
+        </div>
+        
+        <div class="display">
+            <div class="data">
+                <table id="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="head">Title</th>
+                        <th scope="col" class="head">Author</th>
+                        <th scope="col" class="head">Pages</th>
+                        <th scope="col" class="head">Status</th>
+                        <th>&nbsp</th>
+                      </tr>
+                </thead>
+                <tbody id="book-list">
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="scripts.js"></script>
+</html>
